@@ -13,7 +13,7 @@ public class BalloonFactory {
     public Balloon getBalloon(Color color, BalloonType type) {
         Random random = new Random();
         return type == BalloonType.ANIMAL ?
-                new ZebraBalloon(Color.values()[random.nextInt(Color.values().length)]) :
+                new ZebraBalloon(color) :
                 new SimpleBalloon(color);
     }
 
